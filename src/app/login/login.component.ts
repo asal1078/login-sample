@@ -17,25 +17,56 @@ export class LoginComponent implements OnInit {
   repetPassword!:any;
   success!: boolean;
   fail!: boolean;
+  isEmpty!: boolean;
 
   ngOnInit(): void {
   }
 
   postUserInfo(){
-    if(this.userInfo.password == this.repetPassword){
+    debugger
+    if(this.userInfo.firstName == undefined
+      || this.userInfo.firstName == ""
+      || this.userInfo.lastName == undefined
+      || this.userInfo.lastName == ""
+      || this.userInfo.password == undefined
+      || this.userInfo.password == ""){
+      this.isEmpty = true;
+      this.success = false;
+      this.fail = false;
+    }
+    else if(this.userInfo.password == this.repetPassword 
+      && this.userInfo.firstName != undefined
+      &&this.userInfo.firstName != ""
+      && this.userInfo.lastName != undefined
+      && this.userInfo.lastName != ""
+      && this.userInfo.password != undefined
+      && this.userInfo.password != ""){
       this.success = true;
       this.fail = false;
+      this.isEmpty = false;
+      this.userInfo.firstName = "";
+      this.userInfo.lastName = "";
+      this.userInfo.password = "";
+      this.repetPassword = "";
       this.service.PostDatas(this.userInfo).subscribe(
         (data:any)=>{
+          console.log("sucess");
         }
       )
     }
     else{
       this.fail = true;
-      this.success = false
+      this.success = false;
+      this.isEmpty = false
     }
   }
 
+  cancelPost(){
+    this.userInfo.firstName = "";
+    this.userInfo.lastName = "";
+    this.userInfo.password = "";
+    this.repetPassword = "";
+  }
 
 
 
