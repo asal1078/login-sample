@@ -1,7 +1,7 @@
 .submit-btn {
     background-color: rgb(103, 48, 139);
     color: white;
-    border: white 2px solid;
+    border: none;
     border-radius: 10px;
     width: 80px;
     height: 40px;
@@ -10,7 +10,7 @@
 .cancel-btn {
     background-color: rgb(97, 126, 207);
     color: white;
-    border: white 2px solid;
+    border: none;
     border-radius: 10px;
     width: 80px;
     height: 40px;
