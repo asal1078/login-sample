@@ -1,0 +1,51 @@
+.animated-background-success {
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 15px;
+    background: linear-gradient(
+        to right, rgba(141, 224, 141, 0.774),
+        rgba(26, 124, 47, 0.685) , rgb(96, 207, 142));
+    background-size: 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animated-background-success {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.animated-background-fail {
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 15px;
+    background: linear-gradient(
+        to right, rgba(105, 35, 62, 0.774),
+        rgba(199, 63, 29, 0.685) , rgb(175, 32, 27));
+    background-size: 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animated-background-fail {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
