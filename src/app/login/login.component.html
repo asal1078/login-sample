@@ -10,16 +10,32 @@
                 </div>
                 <div class="row justify-content-center mt-5">
                     <div class="col-12" style="text-align: center;">
-                        <input class="input" placeholder="First Name">
+                        <input 
+                        class="input" 
+                        placeholder="First Name"
+                        [(ngModel)]="userInfo.firstName"
+                        name="firstName">
                     </div>
                     <div class="col-12 mt-3" style="text-align: center;">
-                        <input class="input" placeholder="Last Name">
+                        <input 
+                        class="input" 
+                        placeholder="Last Name"
+                        [(ngModel)]="userInfo.lastName"
+                        name="lastName">
                     </div>
                     <div class="col-12 mt-3" style="text-align: center;">
-                        <input class="input" placeholder="password">
+                        <input 
+                        class="input" 
+                        placeholder="password"
+                        [(ngModel)]="userInfo.password"
+                        name="password">
                     </div>
                     <div class="col-12 my-3" style="text-align: center;">
-                        <input class="input" placeholder="confirm password">
+                        <input 
+                        class="input" 
+                        placeholder="confirm password"
+                        [(ngModel)]="repetPassword"
+                        name="repetPassword">
                     </div>
                 </div>
                 <div class="row justify-content-center mt-5">
