@@ -1,0 +1,19 @@
+.animated-background {
+    background: linear-gradient(
+        to right, rgb(185, 122, 181),
+        rgb(86, 121, 197) , rgb(19, 150, 150));
+    background-size: 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
