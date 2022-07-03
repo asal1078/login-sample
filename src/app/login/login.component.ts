@@ -68,6 +68,12 @@ export class LoginComponent implements OnInit {
     this.repetPassword = "";
   }
 
+  removeAlerts(){
+    this.isEmpty = false;
+    this.fail = false;
+    this.success = false;
+  }
+
 
 
 }

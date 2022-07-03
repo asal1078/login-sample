@@ -10,21 +10,24 @@
                 </div>
                 <div class="row justify-content-center mt-5">
                     <div class="col-12" style="text-align: center;">
-                        <input 
+                        <input
+                        (focus)="removeAlerts()"
                         class="input" 
                         placeholder="First Name"
                         [(ngModel)]="userInfo.firstName"
                         name="firstName">
                     </div>
                     <div class="col-12 mt-3" style="text-align: center;">
-                        <input 
+                        <input
+                        (focus)="removeAlerts()"
                         class="input" 
                         placeholder="Last Name"
                         [(ngModel)]="userInfo.lastName"
                         name="lastName">
                     </div>
                     <div class="col-12 mt-3" style="text-align: center;">
-                        <input 
+                        <input
+                        (focus)="removeAlerts()" 
                         class="input" 
                         placeholder="password"
                         [(ngModel)]="userInfo.password"
@@ -32,7 +35,8 @@
                         type="password">
                     </div>
                     <div class="col-12 my-3" style="text-align: center;">
-                        <input 
+                        <input
+                        (focus)="removeAlerts()" 
                         class="input" 
                         placeholder="confirm password"
                         [(ngModel)]="repetPassword"
