@@ -1,7 +1,7 @@
 .animated-background {
     background: linear-gradient(
-        to right, rgb(185, 122, 181),
-        rgb(86, 121, 197) , rgb(19, 150, 150));
+        to right, rgba(185, 122, 181, 0.774),
+        rgba(86, 121, 197, 0.685) , rgb(19, 150, 150));
     background-size: 400%;
     animation: animate-background 10s infinite ease-in-out;
 }
@@ -16,4 +16,10 @@
     100%{
         background-position: 0 50%;
     }
+}
+
+.login-fram {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    height: 400px;
 }
